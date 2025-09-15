@@ -1,4 +1,6 @@
 import React from "react";
+import BackgroundBubbles from "./BackgroundBubbles";
+
 import { motion } from "framer-motion";
 
 // Example image URLs (replace with your own icons/images)
@@ -36,6 +38,8 @@ const TechStackSection = () => {
                          group-hover:opacity-100 group-hover:scale-y-100 scale-y-0 origin-bottom
                          transition-transform duration-500 ease-in-out pointer-events-none"
             ></span> */}
+           <BackgroundBubbles />
+
             {/* Hover border effect */}
             <span
               className="absolute inset-0 rounded-2xl border-2 border-black opacity-0 

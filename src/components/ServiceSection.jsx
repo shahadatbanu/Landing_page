@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import BackgroundBubbles from "./BackgroundBubbles";
 import { Users, ClipboardList, Briefcase, TrendingUp } from "lucide-react";
 
 const services = [
@@ -44,10 +45,7 @@ const cardVariants = {
 const ServiceSection = () => {
   return (
     <section className="relative py-20 from-white via-gray-50 to-white overflow-hidden">
-      {/* Floating background blobs */}
-      <div className="absolute -top-20 -left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-      <div className="absolute top-40 -right-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-
+  <BackgroundBubbles />
       {/* Title */}
       <motion.h2
         initial={{ y: 40, opacity: 0 }}
@@ -56,7 +54,7 @@ const ServiceSection = () => {
         viewport={{ once: true }}
         className="text-center text-4xl md:text-5xl font-extrabold text-gray-900"
       >
-        Our <span className="text-indigo-600">Recruitment Services</span>
+        Our <span>Recruitment Services</span>
       </motion.h2>
 
       {/* Subtitle */}
