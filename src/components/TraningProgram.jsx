@@ -74,7 +74,7 @@ export default function TrainingCarousel() {
             {slides[current].type === "hero" ? (
               <>
                 <motion.p
-                  className="text-green-400 font-serif text-xl mb-2"
+                  className="text-indigo-400 font-serif text-xl mb-2"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
@@ -88,7 +88,7 @@ export default function TrainingCarousel() {
                   transition={{ delay: 0.5, type: 'spring', stiffness: 100 }}
                 >
                   {slides[current].title}{" "}
-                  <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-indigo-400 to-black bg-clip-text text-transparent">
                     {slides[current].highlight}
                   </span>
                 </motion.h1>

@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
 
         {/* CTA */}
-        <button className="hidden md:block bg-gradient-to-r from-gray-500 to-indigo-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">
+        <button className="hidden md:block bg-gradient-to-r from-indigo-500 to-indigo-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">
           Login
         </button>
 

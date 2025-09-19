@@ -297,7 +297,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 200 }}
                 className="px-6 py-3 rounded-full shadow-md cursor-pointer text-white font-medium whitespace-nowrap
-                           bg-gradient-to-r from-indigo-500 to-green-500 hover:shadow-xl"
+                           bg-gradient-to-r from-indigo-500 to-black hover:shadow-xl"
               >
                 {tech.name}
               </motion.div>

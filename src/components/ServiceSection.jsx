@@ -51,7 +51,7 @@ const ServiceSection = () => {
         viewport={{ once: true }}
         className="text-center text-4xl md:text-5xl font-extrabold text-gray-900"
       >
-        Our <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Recruitment Services</span>
+        Our <span className="text-indigo-600 ">Recruitment Services</span>
       </motion.h2>
 
       {/* Subtitle */}
