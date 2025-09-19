@@ -15,6 +15,28 @@ const techStacks = [
 const TechStackSection = () => {
   return (
     <section className="relative py-20 bg-white overflow-hidden">
+       <div className="absolute inset-0 overflow-hidden -z-10">
+              {[...Array(15)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute bg-gradient-to-r from-indigo-200 to-purple-200 rounded-full"
+                  style={{
+                    width: `${Math.random() * 40 + 20}px`,
+                    height: `${Math.random() * 40 + 20}px`,
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`,
+                    opacity: 0.3,
+                  }}
+                  animate={{ y: [0, -60, 0], opacity: [0.3, 0.6, 0.3] }}
+                  transition={{
+                    duration: Math.random() * 6 + 4,
+                    repeat: Infinity,
+                    delay: Math.random() * 2,
+                  }}
+                />
+              ))}
+            </div>
+      
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4">
         {techStacks.map((tech, i) => (
           <motion.div
